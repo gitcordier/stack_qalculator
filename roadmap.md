@@ -18,7 +18,7 @@ Beginning with elementary arithmetic computations could be a good start from scr
 
 
 #### Educational/evangelisation  purposes.
-Once the underlying engineering model is perfectly bounded, it shall be possible to measure the average heat provided by a stack, at given complexity.
+Once the underlying engineering model is perfectly bounded, it shall be possible to measure the average heat provided by the **erasure** of a stack, at given complexity.
 It is not going to be a scientific breakthrough but it might be part of the current momentum about energetical wisdom.
 
 
