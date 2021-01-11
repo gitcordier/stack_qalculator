@@ -9,8 +9,9 @@ The so "spared" time could then be injected in web interface programming: Delive
 
 
 ## Further improvements.
-1. start a proper and rigorous documentation of the undelying design beneath the code;
-2. Testing and improving the API "friendliness" (a rather psychological issue;)
+1. start a proper and rigorous documentation of the undelying design beneath the code.
+    A customary network of exceptions, if relevant, should naturally derive from the formal design.
+2. Testing and improving the API "friendliness";
 3. Properly define and bound the user's behavior, so that we can entirely specify the application ouputs: 
     i.in theory, through formalisation;
     ii. and practice, thanks to testing (unittest)
