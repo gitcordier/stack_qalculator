@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>RPN calculator</title>
+</head>
+<body>
+  <h1> RPN calculator </h1>
+  <h5>
+    <!--rpn/op: GET all operators -->
+    <!-- It works -->
+    <form action="http://localhost:5000/rpn/op">
+    <button class="favorite styled" formmethod="get">
+        Get all operators
+    </button>
+    </form>
+  </h5>
+  <h5>
+    <!-- /rpn/stack: GET all stacks -->
+    <!-- It works -->
+    <form action="http://localhost:5000/rpn/stack">
+    <button class="favorite styled" formmethod="get">
+        Get all stacks
+    </button>
+    </form>
+  </h5>
+  <h5>
+    <!-- rpn/stack: CREATE new stack -->
+    <!-- It works -->
+    <form action="http://localhost:5000/rpn/stack" method="post" class="form-example">
+    <button class="favorite styled" formmethod="post">
+        New stack
+    </button>
+  </form>
+  </h5>
+  <h5>
+    <!-- rpn/stack: UPDATE. Add new value to stack -->
+    <!-- It works -->
+    <form action="http://localhost:5000/rpn/stack" method=post class="form-example">
+      <div class="form-example">
+        <label for="name">Enter a tack </label>
+        <input type="text" name="stack_id" id="stack_id" required>
+      </div>
+      <div class="form-example">
+        <label for="email">Enter a new value </label>
+        <input type="text" name="value" id="value" required>
+      </div>
+      <div class="form-example">
+        <button class="favorite styled" id="update_stack">
+            Update stack
+        </button>
+      </div>
+    </form>
+  </h5>
+  <h5>
+    <!-- rpn/stack/<stack_id>  GET: Compute-->
+    <!-- It does not work -->
+    <form form class="form-example" method="get">
+      <div class="form-example">
+        <label for="name">Enter your stack </label>
+        <input type="text" name="stack_id_compute" id="stack_id_compute" required>
+      </div>
+      <div class="form-example">
+        <label for="name">Enter your operation(s) </label>
+        <input type="text" name="op_compute" id="op" required>
+      </div>
+      <div class="form-example">
+        <button id="button_compute" class="favorite styled" method="get">
+            Compute
+        </button>
+      </div>
+    </form>
+  </h5>
+  <h5>
+    <!-- rpn/stack: UPDATE. Reset stack -->
+    <!-- It does not work -->
+    <form form action="http://localhost:5000/rpn/stack"  method="post" class="form-example">
+      <div class="form-example">
+        <label for="name">Enter your stack </label>
+        <input type="text" name="stack_id_empty" id="stack_id_empty" required>
+      </div>
+      <div class="form-example">
+        <button id="button_empty_stack" class="favorite styled">
+            Empty stack
+        </button>
+      </div>
+    </form>
+  <h5>
+    <!-- rpn/stack: DELETE a given stack -->
+    <!-- It does not work -->
+    <form class="form-example">
+      <div class="form-example">
+        <label for="name">Enter a stack </label>
+        <input type="text" name="stack_id_delete" id="stack_id_delete" required>
+      </div>
+      <div class="form-example">
+        <button id="button_delete_stack" class="favorite styled">
+            Delete stack
+        </button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </h5>
+</body>
+</html>
