@@ -6,7 +6,7 @@ In other words, you can think of it as a stack-based process: First, push number
 
 It is implemented as a client-server whole: The very computations are performed by a [Flask](https://flask.palletsprojects.com/en/1.1.x/) backend, as the final user submits computation requests online. 
 Those computation can easily be automated, thanks to a relevant API.
-Nevertheless, an ordinary html page can offer a minimal interface with the backend. 
+Nevertheless, an ordinary html page offers a visual interface with the backend. 
 
 ## What the folder contains
 - rpn.py, the Flask bakckend;
@@ -22,7 +22,7 @@ Nevertheless, an ordinary html page can offer a minimal interface with the backe
 - This README.md
 
 ## The API
-The First route is 
+The first route is 
 
     /rpn/stack
 
@@ -41,7 +41,7 @@ Parallely, there exists the following class of paths:
     
 They are routing to arithmetic computations of statcks. So, with more detail:
 
-- GET, getting the result of the desired computations; A wished operation is passed as a GET parameter. 
+- GET, getting the result of the desired computations. A wished operation is passed as a GET parameter. 
   Note that 
   
   
