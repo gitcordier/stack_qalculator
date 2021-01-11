@@ -2,7 +2,7 @@
 
 ## Introduction 
 The the application is a [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) calculator. 
-In other words, you can think of it as a stack-based process: First, push numbers in the stack, next compute from them and save the result as tail of the stack. 
+In other words, you can think of it as a stack-based process: First, push numbers in the stack, next compute then save the result as tail of the stack. 
 
 It is implemented as a client-server whole: The very computations are performed by a [Flask](https://flask.palletsprojects.com/en/1.1.x/) backend, as the final user submits computation requests online. 
 Those computation can easily be automated, thanks to a relevant API.
@@ -17,7 +17,7 @@ Nevertheless, an ordinary html page can offer a minimal interface with the backe
 - style.css, a style sheet for page.html
 - todo.md, some TODOS;
 - roadmap.md, some ideas for futher maintain and development;
-- LICENSE; regualar MIT license;
+- LICENSE; regular MIT license;
 - .gitignore;
 - This README.md
 
@@ -26,7 +26,7 @@ The First route is
 
     /rpn/stack
 
-and is the literally path to all processes that aim at stack, namely
+and is literally the path to all processes that aim at stack, namely
 
 - POST: 
   - UPDATE a stack by appending a new value,
