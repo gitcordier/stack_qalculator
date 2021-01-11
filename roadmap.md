@@ -11,7 +11,7 @@ This encompasses all customary operations that users could define themselves.
 ### About concurrency
 
 #### Technology/prototyping
-Our design allows as much as stack as desired.
+Our design allows as many as stack as desired.
 We do not believe there is a rising demand for collective pocket calculators… 
 But developing servers monitoring concurrent tasks trough a unique and easy-to-grasp API might be much more useful.
 Beginning with elementary arithmetic computations could be a good start from scratch, especially for electrical consumptiom benchmarking.
