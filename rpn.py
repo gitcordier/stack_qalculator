@@ -51,7 +51,7 @@ class RPN():
             Given 'id', spots the stack that is identified with 'id'.
         
             More specifically, returns the index of the stack in the 
-            stack record (or -1 if no such stack were found).
+            stack record (or -1 if no such stack was found).
         '''
         n = int(id)
         if -1 < n < self.next_id:
@@ -136,7 +136,7 @@ def get_op_():
     }
     return jsonify(dct)
     
-@app.route('/rpn/stack', methods=['DELETE', 'GET', 'POST', 'PUT'])
+@app.route('/rpn/stack', methods=['DELETE', 'GET', 'POST'])
 def deal_with_stacks():
     '''
         This method nests all processes that aim at stack.
@@ -194,7 +194,7 @@ def compute(id):
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
     if request.method == 'GET':
         array   = rpn.get(id)
-        symbol_ = request.args.get('op', '')    # e.g. ++/- .
+        symbol_ = request.args.get('op', '')    # e.g. '++/-' .
         n       = len(symbol_)                  # number of operation(s).
         
         # Pathological case
