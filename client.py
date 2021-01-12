@@ -47,6 +47,11 @@ print('Computation(s) within a stack:\n', get.text)
 get = requests.get('http://localhost:5000/rpn/stack')
 print('Get all stacks:\n', get.text)
 
+# Get a specific stack
+#'/rpn/stack', method = GET
+get = requests.get('http://localhost:5000/rpn/stack', params = {'stack_id': 2})
+print('Get a specific stack:\n', get.text)
+
 # Empty stack
 # /rpn/stack/<stack_id>', method = PUT
 put = requests.put('http://localhost:5000/rpn/stack/2')

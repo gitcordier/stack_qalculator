@@ -28,11 +28,13 @@ The first route is
 
 and is literally the path to all processes that aim at stack, namely
 
-- POST: 
-  - UPDATE a stack by appending a new value,
+- POST:
+  - UPDATE a stack by appending a new value (keys: 'stack_id' and 'value');
   - CREATE a new stack 
-- GET all current stacks
-- DELETE a given stack
+- GET:
+  - A specific stask (key: 'stack_id');
+  - All current stacks
+- DELETE a given stack (key: 'stack_id')
 
 
 Parallely, there exists the following class of paths:

@@ -162,10 +162,17 @@ def deal_with_stacks():
         # # # # # # # # # # # # # # 
         return rpn.create() 
     elif request.method == 'GET':
+        # # # # # # # # # # # # # # # #
+        # READ: Get a specific stack. #
+        # # # # # # # # # # # # # # # #
+        if {'stack_id'} == set(request.args):
+            id = request.args.get('stack_id', '')
+            return jsonify(rpn.get(id))
         # # # # # # # # # # # # #
         # READ: Get all stacks. #
         # # # # # # # # # # # # #
-       return jsonify(rpn.stack_)
+        else:
+            return jsonify(rpn.stack_)
     
     elif request.method == 'DELETE':
         # # # # # # # # # # # # # # # # #
