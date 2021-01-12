@@ -39,7 +39,7 @@ print('Get all stacks:\n', get.text)
 
 # Compute
 # /rpn/stack/<stack_id>', method = GET
-get = requests.get('http://localhost:5000/rpn/stack/2', params = {'op': '++'})
+get = requests.get('http://localhost:5000/rpn/stack/2', params = {'op': '+-'})
 print('Computation(s) within a stack:\n', get.text)
 
 # Get all stacks
