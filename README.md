@@ -52,7 +52,7 @@ They are routing to arithmetic computations of statcks. So, with more detail:
 
 
       
-- PUT: Emptying a stack, so that we can restart a new series of computations
+- PUT: Emptying a stack, so that we can start a new series of computations
 
 ## How to run it
 To launch the backend, 
