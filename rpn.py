@@ -221,9 +221,8 @@ def compute(id):
                 operand_first = float(array[-2])
                 operand_last  = float(array[-1])
             
-                # Remove the last read values
-                array.pop(-1)
-                array.pop(-1)
+                # Remove the first read value
+                array.pop(-2)
             
                 # Get the relevant arithmetic operation
                 #
@@ -241,11 +240,10 @@ def compute(id):
                 # And so on. You may define here any other wished operation.
                 
                 else:
-                    # 0-ary operator i.e. constant.
-                    operator = lambda x, y: y
+                    pass
                 #
-                # Compute then 'inject' the new output into the stack.
-                array.append(operator(operand_first, operand_last))
+                # Compute new output then inject it at the top of the stack.
+                array[-1] = operator(operand_first, operand_last)
                 
             else: # Failure
                 return Message('Perform the requested %d computation%s from value%s in stack %s.'
