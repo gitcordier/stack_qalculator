@@ -9,8 +9,8 @@ The so "spared" time could then be injected in web interface programming: Delive
 
 
 ## Further improvements.
-1. start a proper and rigorous documentation of the undelying design beneath the code.
-    A customary network of exceptions, if relevant, should naturally derive from the formal design.
+1. start a proper and rigorous documentation of the underlying design beneath the code.
+    A customary network of exceptions, if relevant, should derive from the formal design.
 2. Testing and improving the API "friendliness";
 3. Properly define and bound the user's behavior, so that we can entirely specify the application ouputs: 
     i.in theory, through formalisation;
@@ -19,8 +19,3 @@ The so "spared" time could then be injected in web interface programming: Delive
 ## Note about the Web interface
 The current web interface is flawed but already provides evidence that multi-stack calculators can be delivered online with a tiny amount of code; 
 which is the "**Proof of Concept** part". Furthermore, we have not a reliable API yet. So this why we would recommend the frontend developement as a second step.
-
-
-
-
-
