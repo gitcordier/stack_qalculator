@@ -13,7 +13,7 @@ Nevertheless, an ordinary html page offers a visual interface with the backend.
 - message.py, where an extension of dict is defined;
 - client.py the client-client, for tests and automation purposes;
 - page.html, the prototype of the web client;
-- script.js, implementation of requests (PUT, DELETE) we cannot have with pure HTML;
+- script.js, implementation of requests (PUT, DELETE) we cannot have it with pure HTML;
 - style.css, a style sheet for page.html
 - todo.md, some TODOS;
 - roadmap.md, some ideas for futher maintain and development;
