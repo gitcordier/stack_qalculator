@@ -5,7 +5,7 @@ The the application is a [Reverse Polish Notation](https://en.wikipedia.org/wiki
 In other words, you can think of it as a stack-based process: First, push numbers in the stack, next compute then save the result as tail of the stack. 
 
 It is implemented as a client-server whole: The very computations are performed by a [Flask](https://flask.palletsprojects.com/en/1.1.x/) backend, as the final user submits computation requests online. 
-Those computation can easily be automated, thanks to a relevant API.
+Computation requests can easily be automated, thanks to a relevant API.
 Nevertheless, an ordinary html page offers a visual interface with the backend. 
 
 ## What the folder contains
@@ -39,7 +39,7 @@ and is literally the path to all processes that aim at stack, namely
 
 Parallely, there exists the following class of paths:
 
-    /rpn/stack/<stack_id>'
+    /rpn/stack/<stack_id>
     
 They are routing to arithmetic computations of statcks. So, with more detail:
 
@@ -52,7 +52,7 @@ They are routing to arithmetic computations of statcks. So, with more detail:
 
 
       
-- PUT: Empty a stack, so that we can restart a new series of computations
+- PUT: Emptying a stack, so that we can restart a new series of computations
 
 ## How to run it
 To launch the backend, 
